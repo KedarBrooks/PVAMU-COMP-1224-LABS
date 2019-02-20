@@ -1,3 +1,23 @@
+/*
+* Sorting & Search Methods Lab 2 | Part A
+* Kedar Brooks, 2019
+* Example Output:
+*
+* generating 20 item array: [ 41,67,34,0,69,24,78,58,62,64,5,45,81,27,61,91,95,42,27,36 ]
+*
+*
+*
+* selection sort:[ 0,5,24,27,27,34,36,41,42,45,58,61,62,64,67,69,78,81,91,95 ]
+*
+* bubble sort:   [ 0,5,24,27,27,34,36,41,42,45,58,61,62,64,67,69,78,81,91,95 ]
+*
+* Enter a value to find within set: 67
+*
+* target value (67) found at index: 15
+*
+***************************************************/
+
+/* #include "pch.h" For visual studios */ 
 #include <iostream>
 #include <stdio.h>
 
@@ -30,11 +50,11 @@ int main() {
 	std::cout << "bubble sort:   ";
 	arrayPrinter(b, 20);
 	// Conduct Binary Search
-	int target; 
+	int target;
 	std::cout << "Enter a value to find within set: ";
-	std::cin >> target; 
-	std::cout << std::endl; 
-	binarySearch(target, a, 20); 
+	std::cin >> target;
+	std::cout << std::endl;
+	binarySearch(target, a, 20);
 
 	return 0;
 }
@@ -63,23 +83,23 @@ void bubbleSort(int b[], int size) {
 }
 // conducts a binary search through a sorted list for a target value
 void binarySearch(int target, int a[], int size) {
-	int f=0, m, l=size-1;
+	int f = 0, m, l = size - 1;
 	m = (f + l) / 2;
 	while (f <= l) {
 		if (a[m] < target) {
-			f = m + 1; 
+			f = m + 1;
 		}
 		else if (a[m] == target) {
-			printf("target value (%d) found at index: %d", target, m + 1); 
+			printf("target value (%d) found at index: %d", target, m + 1);
 			break;
 		}
 		else {
-			l= m - 1; 
+			l = m - 1;
 		}
-		m = (f + l) / 2; 
+		m = (f + l) / 2;
 	}
 	if (f > l)
-		std::cout << target << ": could not be found in set" << std::endl; 
+		std::cout << target << ": could not be found in set" << std::endl;
 }
 // handles value swapping in arrays
 void swap(int a[], int indexA, int indexB) {
