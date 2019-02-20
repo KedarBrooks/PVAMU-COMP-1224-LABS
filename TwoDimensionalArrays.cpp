@@ -19,7 +19,7 @@
 * The total amount of even numbers found were: 14
 *
 ***************************************************/
-
+/* #include "pch.h" For visual studios */ 
 #include <iostream>
 #include <stdio.h>
  
