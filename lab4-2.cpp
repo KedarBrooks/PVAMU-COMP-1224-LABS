@@ -35,7 +35,7 @@ public:
 		return true;
 	}
 	~Numbers() {
-		delete p;
+		delete [] p;
 	}
 };
 
