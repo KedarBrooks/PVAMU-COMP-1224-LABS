@@ -3,7 +3,7 @@
  * Driver Kedar Brooks
  * Navigator Kerry Mickens
  *
- * Expected Output:
+ * Expected Output: 
  * [recursiveMode]
  * ID:20 Score: 47 Grade: F
  * ID:19 Score: 24 Grade: F
