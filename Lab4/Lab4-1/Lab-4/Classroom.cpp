@@ -4,7 +4,7 @@
 /**
  * Classroom.cpp
 */
-Classroom::Classroom()
+Classroom::Classroom() 
 {
 	// No recursion if no flag
 	generateClassroom(false); 
